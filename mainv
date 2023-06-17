@@ -1,0 +1,109 @@
+# Полиморфизм
+
+# a = 15
+# b = True
+# c = 'Hello'
+#
+# print(type(a))
+# print(type(b))
+# print(type(c))
+
+#
+# class Animal:
+#     legs = 4
+#     tail = 1
+#     def voice(self):
+#         print('какой-то звук')
+#
+# class Cat(Animal):
+#     def voice(self):
+#         print('мяу-мяу')
+#
+# class Dog(Animal):
+#     def voice(self):
+#         print('гав-гав')
+# #
+# cat1 = Cat()
+# dog1 = Dog()
+# animal1 = Animal()
+#
+# farm_band = [cat1, dog1, animal1]
+#
+# for item in farm_band:
+#     item.voice()
+
+
+# ИНКАПСУЛЯЦИЯ
+
+# _value
+# __value
+
+# class A:
+#     __additionary = 'sila'
+#     def public(self):
+#         print(self.__additionary)
+#     def _private(self):
+#         print('hello! I`m private method')
+#     def __fullPrivate(self):
+#         print('hello! I`m super private method')
+#
+# a = A()
+# a.public()
+
+
+
+
+# class calcIpoteca:
+#     def __init__(self, a, b, c):
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#         self.res = 0
+#
+#     def __calculator(self):
+#         self.a += 5
+#         self.res = 10
+#
+#     def getResult(self):
+#         return self.res
+
+
+
+
+
+
+
+def func_decorator(func):
+    def inner():
+        print('...start')
+        func()
+        print('...end')
+    return inner
+
+@func_decorator
+def some_func():
+    print('Какие-то действия, какой-то функции')
+
+@func_decorator
+def hello_func():
+    print('hello!!!!!')
+
+some_func()
+hello_func()
+
+# some_func = func_decorator(some_func)
+# some_func()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

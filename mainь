@@ -1,0 +1,62 @@
+import random
+
+# class Tank:
+#     def __init__(self, model, health, armor, min_damage, max_damage):
+#         self.model = model
+#         self.health = health
+#         self.armor = armor
+#         self.damage = random.randint(min_damage, max_damage)
+
+#     def print_info(self):
+#         print(f'{self.model} имеет {self.health}хп и {self.damage} урона')
+
+#     def health_down(self, damage):
+#         print('\n')
+#         self.health = self.health - damage
+#         print(f'[{self.model}]: Командир, по нашему экипажу {self.model} попали, у нас осталось {self.health}хп')
+
+#     def shot(self, enemy):
+#         enemy.health_down(self.damage)
+#         # print('\n')
+#         print(f'[{self.model}]: Точно в цель! Теперь у противника {enemy.model} {enemy.health}хп')
+
+# tank1 = Tank('T-34', 200, 100, 50, 100)
+# tank2 = Tank('Mouse', 150, 80, 10, 80)
+
+# tank1.print_info()
+# tank2.print_info()
+
+# tank1.shot(tank2)
+# tank1.shot(tank2)
+# tank1.shot(tank2)
+# tank1.shot(tank2)
+# tank1.shot(tank2)
+# tank1.shot(tank2)
+
+# class User:
+#     def __init__(self,health,min_damage,max_damage,variable_attack):
+#         self.health = health
+#         self.variable_attack = variable_attack
+#         self.damage = random.randint(min_damage, max_damage)
+#         attack = self.variable_attack
+
+# user1 = User(100,10,70,kick)
+# user1.damage
+# class Wizard(User):
+#     print()
+
+
+
+
+
+
+
+
+
+
+
+# a = 5
+# b = 6
+#
+# print(f'a = {a} b = {b}')
+# print('a = ', a, 'b =', b)
